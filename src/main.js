@@ -1,0 +1,1 @@
+console.log('API URL = https://api.themoviedb.org/3/movie/550?api_key=51bc316b3a8f2e7f0a1356496de79d9c' + API_KEY)
