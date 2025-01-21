@@ -10,17 +10,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@700;800&family=Red+Hat+Display:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./styles/app.css" />
 
-  <title>MEtalMovies</title>
+  <title>MetalMoviesApp</title>
 </head>
 <body>
   <header id="header" class="header-container">
     <span class="header-arrow inactive">&lt;</span>
-    <h1 class="header-title">MetalMovies</h1>
+    <h1 class="header-title">MetalMoviesApp</h1>
     <h1 class="header-title header-title--categoryView inactive">Acción</h1>
 
     <form id="searchForm" class="header-searchForm">
       <input type="text" placeholder="Vengadores" />
-      <button>🔍</button>
+      <button id="searchBtn">🔍</button>
     </form>
   </header>
 
@@ -31,29 +31,13 @@
     </div>
 
     <article class="trendingPreview-movieList">
-      <div class="movie-container">
+      <!-- <div class="movie-container">
         <img
-          src="https://media.themoviedb.org/t/p/w220_and_h330_face/jMBTJQiHAyGlZR05J2sq5coA6ew.jpg"
+          src="https://image.tmdb.org/t/p/w300/adOzdWS35KAo21r9R4BuFCkLer6.jpg"
           class="movie-img"
           alt="Nombre de la película"
         />
-      </div>
-
-      <div class="movie-container">
-        <img
-          src="https://media.themoviedb.org/t/p/w220_and_h330_face/ugX4WZJO3jEvTOerctAWJLinujo.jpg"
-          class="movie-img"
-          alt="Nombre de la película"
-        />
-      </div>
-
-      <div class="movie-container">
-        <img
-          src="https://media.themoviedb.org/t/p/w220_and_h330_face/jTQONM7jt1yv2lL972TtmWO0UIZ.jpg"
-          class="movie-img"
-          alt="Nombre de la película"
-        />
-      </div>
+      </div> -->
     </article>
   </section>
 
@@ -61,24 +45,16 @@
     <h2 class="categoriesPreview-title">Categorías</h2>
 
     <article class="categoriesPreview-list">
-      <div class="category-container">
+      <!-- <div class="category-container">
         <h3 id="id28" class="category-title">Romance</h3>
-      </div>
-
-      <div class="category-container">
-        <h3 id="id16" class="category-title">Drama</h3>
-      </div>
-
-      <div class="category-container">
-        <h3 id="id14" class="category-title">Acción</h3>
-      </div>
+      </div> -->
     </article>
   </section>
 
   <section id="genericList" class="genericList-container inactive">
     <div class="movie-container">
       <img
-        src="https://media.themoviedb.org/t/p/w220_and_h330_face/8PYqGSd8MOm5ce8io4qNSAiSExW.jpg"
+        src="https://media.themoviedb.org/t/p/w220_and_h330_face/jMBTJQiHAyGlZR05J2sq5coA6ew.jpg"
         class="movie-img"
         alt="Nombre de la película"
       />
@@ -128,14 +104,6 @@
       <div class="relatedMovies-scrollContainer">
         <div class="movie-container">
           <img
-            src="https://media.themoviedb.org/t/p/w220_and_h330_face/bCDaKZLRkrVVtPNyHxUfKvepW1N.jpg"
-            class="movie-img"
-            alt="Nombre de la película"
-          />
-        </div>
-        
-        <div class="movie-container">
-          <img
             src="https://media.themoviedb.org/t/p/w220_and_h330_face/8PYqGSd8MOm5ce8io4qNSAiSExW.jpg"
             class="movie-img"
             alt="Nombre de la película"
@@ -144,7 +112,15 @@
         
         <div class="movie-container">
           <img
-            src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/toZiAd0n0NKhiuHTiGk7kBMmhtG.jpg"
+            src="https://media.themoviedb.org/t/p/w220_and_h330_face/ugX4WZJO3jEvTOerctAWJLinujo.jpg"
+            class="movie-img"
+            alt="Nombre de la película"
+          />
+        </div>
+        
+        <div class="movie-container">
+          <img
+            src="https://media.themoviedb.org/t/p/w220_and_h330_face/jTQONM7jt1yv2lL972TtmWO0UIZ.jpg"
             class="movie-img"
             alt="Nombre de la película"
           />
@@ -153,9 +129,12 @@
     </article>
   </section>
 
-  <footer>Hecho con amor en Metal por @rorocan</footer>
+  <footer>Hecho con amor en Platzi por @juandc</footer>
   
-  <script src="./src/secrets.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./src/secrets_examples.js"></script>
+  <script src="./src/nodes.js"></script>
   <script src="./src/main.js"></script>
+  <script src="./src/navigation.js"></script>
 </body>
 </html>
